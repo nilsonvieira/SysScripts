@@ -1,0 +1,20 @@
+#!/bin/bash
+
+case $1 in
+
+stop)
+    echo "Parando Wireguard VPN";
+    sudo systemctl stop wg-quick@wg0;;
+start)
+    echo "Iniciando Wireguard VPN";
+    sudo systemctl start wg-quick@wg0;;
+status)
+    echo "Exibindo Status do Wireguard VPN";
+    sudo systemctl status wg-quick@wg0;;
+restart)
+    echo "Restartando Wireguard VPN";
+    sudo systemctl stop wg-quick@wg0;
+    sudo systemctl start wg-quick@wg0;;
+*) echo "Argumento Inválido. Use stop, start ou restart" ;;
+
+esac
