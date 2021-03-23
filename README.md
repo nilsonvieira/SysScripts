@@ -20,3 +20,19 @@ sudo mv ./wg-vpn /usr/local/bin/
 ```bash 
 sudo chmod +x /usr/local/bin/wg-vpn
 ```
+# Instalação do ICECC e ICEMON 
+Esta Instalação é destinada para o Mint 20.
+
+> Para a versão **Mint 19**  utilize script contido nos repositórios do Alfredo (https://github.com/alfredocoj/install_developers) ou o Fork (https://github.com/nilsonvieira/install_developers).
+
+Antes de instalar é necessário criar um arquivo .env que deve conter as variáveis necessárias para execuçao do ICEMON. O modelo está na pasta nomeado de `env.template`, bastando renomeá-lo para `.env` e editar as informações necessárias dentro do mesmo.
+
+
+1. Procedimento para Instalação:
+```bash
+cd Icecc\ and\ Icemon/
+
+chmod +x ./*
+
+./install_icecc.sh
+```
